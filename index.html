@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script src="/jquery-3.6.2.min.js"></script>
+        <link rel="stylesheet" href="/style.css">
+
+        <script src="https://kit.fontawesome.com/a4250105eb.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <div
+                    class="d-flex justify-content-between border container_header align-items-center">
+                    <div>20120594</div>
+                    <div>Movies info</div>
+                    <div>
+                        <div class="keyAPi">keyAPi</p>
+                        <div class="d-flex">
+                            <div class="checkbox-wrapper-2" onclick="myFn()">
+                                <input type="checkbox" class="sc-gJwTLC ikxBAC">
+                            </div>
+                            <label class="darkMode">Dark Mode</label>
+                            <label class="lightMode">Light Mode</label>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="navbar navbar-light bg-light ">
+                <div class="container-fluid" style="background-color: #f8f9fb;">
+                    <a class="navbar-brand">Home</a>
+                    <form class="d-flex">
+                        <input onkeyup="Onchange()" id="search_movie"
+                            class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+            <div
+                class="silder_content silder_anh">
+                <div id="carouselExampleCaptions" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="silder_anh">
+                                <img
+                                    src="https://m.media-amazon.com/images/M/MV5BZjhhMThhNDItNTY2MC00MmU1LTliNDEtNDdhZjdlNTY5ZDQ1XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_Ratio0.6762_AL_.jpg"
+                                    alt="anh1">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5></h5>
+                            </div>
+                        </div>
+                        <div class="silder-one">
+
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div style="width: 1200px;margin: 0 auto;">
+                <h2>
+                    list Movie
+                </h2>
+
+                <div
+                    class="search_input row"
+                    style="flex-wrap: wrap;">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="footer-row-two-silder">
+                    <h2>
+                        Most Popular
+                    </h2>
+                    <div class="footer-row-two-silder">
+                        <div class="sidler-btn">
+                            <i class="fa-solid fa-angle-left btn-fa-left"></i>
+                            <i class="fa-solid fa-angle-right btn-fa-right"></i>
+                        </div>
+                        <div class="sidler-imgs-list">
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.7015_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BZWZkZjE2OGYtN2RiMS00ZDE5LWFlZGQtYzI1OTNhZDZkYzM3XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BZTQ0MjAzYzktMmUxMS00NjVlLWFjNTItNzBlY2E5NmMzYTY4XkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNTBhNmM2ODgtNDI4My00MWM5LWIzYmYtYzQzNWViNzg5MmVlXkEyXkFqcGdeQXVyOTIxNTAyMzU@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BZTQ0MjAzYzktMmUxMS00NjVlLWFjNTItNzBlY2E5NmMzYTY4XkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BZWZkZjE2OGYtN2RiMS00ZDE5LWFlZGQtYzI1OTNhZDZkYzM3XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.7015_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNjAwMzk1YzEtOGJjOS00Mjg3LTllNGItMGYxNWI0ZTI1MTk3XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BODZhNzlmOGItMWUyYS00Y2Q5LWFlNzMtM2I2NDFkM2ZkYmE1XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BYWJlNThmNWMtZWE5Zi00YWJiLWJiOTQtZWY1Y2I3ZmNhMDYwXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNzJlM2NmZTItOGQyYS00MmE2LTkwZGUtNDFkNmJmZjRjZjcxXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BMmZiN2VmMjktZDE5OC00ZWRmLWFlMmEtYWViMTY4NjM3ZmNkXkEyXkFqcGdeQXVyMTI2MTc2ODM3._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNTE0OGNjYWUtMDBmOC00Mzg1LWE3OTgtMDRjZmViZDU2YWQxXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNzg3OTEzMTgtYWU0OC00YTI0LWIxOTAtNmRkNTc0Nzg2YWU1XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_Ratio0.7910_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNmNiMGRkYmUtYjI4MC00ZDg4LTk3YjktNTczNzEzYmExMjAwXkEyXkFqcGdeQXVyMTQ4MTk0NjYx._V1_Ratio0.7015_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BMWQ0NWQ4MzEtZGQ3Yi00NGQ5LWJlMDAtNjQzMGUxMjM3Mzg0XkEyXkFqcGdeQXVyMTU5OTc2NTk@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BOTVlMDI5NDMtOGE1Zi00ZmEwLTg3NDQtMzgxOWNkNWE5YmE2XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_Ratio0.8209_AL_.jpg"
+                                alt>
+                            <img class="image"
+                                src="https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 1200px;margin: 0 auto;">
+                <div class="silder-three">
+                    <h2>Top Rating</h2>
+                    <div class="silder-three-container">
+                        <div class="sidler-three-btn">
+                            <i class="fa-solid fa-angle-left btnLeft"></i>
+                            <i class="fa-solid fa-angle-right btnRight"></i>
+                        </div>
+                        <div class="sidler-three-list">
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.7015_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BZWZkZjE2OGYtN2RiMS00ZDE5LWFlZGQtYzI1OTNhZDZkYzM3XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BZTQ0MjAzYzktMmUxMS00NjVlLWFjNTItNzBlY2E5NmMzYTY4XkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNTBhNmM2ODgtNDI4My00MWM5LWIzYmYtYzQzNWViNzg5MmVlXkEyXkFqcGdeQXVyOTIxNTAyMzU@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BZTQ0MjAzYzktMmUxMS00NjVlLWFjNTItNzBlY2E5NmMzYTY4XkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BZWZkZjE2OGYtN2RiMS00ZDE5LWFlZGQtYzI1OTNhZDZkYzM3XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.7015_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNjAwMzk1YzEtOGJjOS00Mjg3LTllNGItMGYxNWI0ZTI1MTk3XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BODZhNzlmOGItMWUyYS00Y2Q5LWFlNzMtM2I2NDFkM2ZkYmE1XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BYWJlNThmNWMtZWE5Zi00YWJiLWJiOTQtZWY1Y2I3ZmNhMDYwXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNzJlM2NmZTItOGQyYS00MmE2LTkwZGUtNDFkNmJmZjRjZjcxXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BMmZiN2VmMjktZDE5OC00ZWRmLWFlMmEtYWViMTY4NjM3ZmNkXkEyXkFqcGdeQXVyMTI2MTc2ODM3._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNTE0OGNjYWUtMDBmOC00Mzg1LWE3OTgtMDRjZmViZDU2YWQxXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNzg3OTEzMTgtYWU0OC00YTI0LWIxOTAtNmRkNTc0Nzg2YWU1XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_Ratio0.7910_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNmNiMGRkYmUtYjI4MC00ZDg4LTk3YjktNTczNzEzYmExMjAwXkEyXkFqcGdeQXVyMTQ4MTk0NjYx._V1_Ratio0.7015_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BMWQ0NWQ4MzEtZGQ3Yi00NGQ5LWJlMDAtNjQzMGUxMjM3Mzg0XkEyXkFqcGdeQXVyMTU5OTc2NTk@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BOTVlMDI5NDMtOGE1Zi00ZmEwLTg3NDQtMzgxOWNkNWE5YmE2XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_Ratio0.8209_AL_.jpg"
+                                alt>
+                            <img class="three-image"
+                                src="https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_Ratio0.6716_AL_.jpg"
+                                alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p
+                    class="footer-text d-flex justify-content-center align-items-center">©
+                    2023. Moie</p>
+            </footer>
+        </div>
+    </body>
+    <script type="module" src="data1.js">
+        
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="silder.js"></script> 
+    <script src="data1.js"></script>
+    <!-- <script src="db/data.js"></script>
+    <script src="data1.js"></script>
+    <script src="silder.js"></script> -->
+</html>
