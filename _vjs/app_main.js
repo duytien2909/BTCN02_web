@@ -6,7 +6,7 @@ import voM2 from './main2.js';
 import voF from './footer.js';
 import store from './store.js';
 import Person from "./Person.js";
-  
+
 export default {
 	data() { 
 		return {

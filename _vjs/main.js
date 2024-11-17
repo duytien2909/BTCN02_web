@@ -1,6 +1,6 @@
 import store from './store.js';
 import Person from "./Person.js"; 
-
+ 
 export default {
 	name: 'voM',
 	data() {

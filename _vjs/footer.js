@@ -2,7 +2,7 @@ export default {
 	name: 'voF',  // Đặt tên cho component
 	data() {
 		return {
-			
+		
 		} 
 	},
 	template: `
