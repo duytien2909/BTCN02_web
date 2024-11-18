@@ -1,4 +1,4 @@
-reloads;
+reloads; 
  
 const listImg = document.querySelectorAll('.image');
 const sidlerImgs = document.querySelector('.sidler-imgs-list');

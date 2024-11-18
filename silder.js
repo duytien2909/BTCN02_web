@@ -1,5 +1,5 @@
 reloadThree;
-
+ 
 const listImgThree = document.querySelectorAll('.sidler-three-list img');
 const sidlerImgsThree = document.querySelector('.sidler-three-list');
 const btnLeft = document.querySelector('.btnLeft');
