@@ -1,5 +1,5 @@
 export default class {
-	constructor(obj) {
+	constructor(obj) { 
 		this.id = obj.id;
 		this.email = obj.email;
 		this.first_name = obj.first_name;

@@ -1,5 +1,5 @@
 import store from './store.js'; 
-import Person from "./Person.js";
+import Person from "./Person.js"; 
  
 export default {
 	name: 'voM2',  // Đặt tên cho component, ví dụ là 'voM2'

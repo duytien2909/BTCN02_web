@@ -1,4 +1,4 @@
-import voH from './header.js';
+import voH from './header.js'; 
 import voN from './navigate_bar.js';
 import voS from './side.js'; 
 import voM from './main.js';

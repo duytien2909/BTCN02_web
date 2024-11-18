@@ -1,4 +1,4 @@
-export default { 
+export default {  
 	name: 'voH', // Đặt tên cho component, ví dụ là 'voH'
 	data() {
 		return { 

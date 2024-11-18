@@ -1,5 +1,5 @@
 reloads;
-
+ 
 const listImg = document.querySelectorAll('.image');
 const sidlerImgs = document.querySelector('.sidler-imgs-list');
 const btnFALeft = document.querySelector('.btn-fa-left');

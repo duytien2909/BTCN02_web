@@ -4,4 +4,4 @@ const { reactive } = Vue;
 export default reactive ({
 	persons: [], 
 	currentPerson: null
-});
+}); 
